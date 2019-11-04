@@ -1,0 +1,236 @@
+---
+title: "L. Paloma Rojas-Saunero's CV"
+author: L. Paloma Rojas-Saunero
+date: "`r Sys.Date()`"
+output:
+  pagedown::html_resume:
+    css: ['css/styles.css', 'resume']
+    # set it to true for a self-contained HTML page but it'll take longer to render
+    self_contained: FALSE
+---
+
+```{r, include=FALSE}
+knitr::opts_chunk$set(
+  results='asis', 
+  echo = FALSE
+)
+
+library(glue)
+library(tidyverse)
+
+# Set this to true to have links turned into footnotes at the end of the document
+PDF_EXPORT <- FALSE
+
+# Holds all the links that were inserted for placement at the end
+links <- c()
+
+source('parsing_functions.R')
+
+# Load csv with position info
+position_data <- read_csv('positions.csv')
+
+# to print:: pagedown::chrome_print()
+
+```
+
+
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("
+  <style>
+  :root{
+    --decorator-outer-offset-left: -6.5px;
+  }
+  </style>")
+}
+```
+
+
+Aside
+================================================================================
+
+<center>
+![logo](photo.png){width=70%}
+</center>
+
+```{r}
+# When in export mode the little dots are unaligned, so fix that. 
+if(PDF_EXPORT){
+  cat("View this CV online with links here https://palolili23.github.io/my_cv/")
+} else {
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/palolili23/my_cv/index.pdf)")
+}
+```
+
+Contact {#contact}
+-------------------------------------------------------------------------------
+- <i class="fa fa-envelope"></i> l.rojassaunero@erasmusmc.nl
+- <i class="fa fa-twitter"></i> palolili23
+- <i class="fa fa-github"></i> github.com/palolili23
+- <i class="fa fa-phone"></i> (734) 0626359216
+- <i class="fa fa-linkedin"></i> [lprojass](https://www.linkedin.com/in/lprojass/) 
+
+
+Skills {#skills}
+-------------------------------------------------------------------------------
+### Data management:
+
+- RedCap
+
+- R
+
+### Statistical Analysis:
+
+- R
+
+- STATA
+
+- SPSS
+
+- SAS
+
+### Reproducibility tools:
+
+- Git and Github
+
+- RMarkdown
+
+
+Main
+===============================================================================
+L. Paloma Rojas-Saunero {#title}
+-------------------------------------------------------------------------------
+
+
+```{r}
+intro_text <- "I am a PhD student at the Epidemiology Department of Erasmus MC, and I am a part of the Causal Inference Group and the Neuro-Epidemiology Group. My research is focused on applying causal inference methods in cohort studies, specifically to emulate target trials for long-term exposures related to dementia and to understand the role of competing events in this setting. I am also an R enthusiast (R-Ladies organizer) and advocate of open science."
+
+cat(sanitize_links(intro_text))
+```
+
+
+
+Education {data-icon=graduation-cap data-concise=true}
+-------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'education')
+```
+
+
+Research Experience {data-icon=laptop}
+-------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'research_positions')
+```
+
+
+Teaching Experience {data-icon=chalkboard-teacher}
+-------------------------------------------------------------------------------
+
+::: aside
+
+### Languages {#languages}
+
+- **Spanish:** Native language
+
+- **English:** Fully fluent (speaking, reading and writing)
+
+- **French:** Strong proficiency (DELF B2)
+
+- **Portuguese:**  Intermediate proficiency. Brasilian-Bolivian Cultural Center.
+
+- **Italian:** Basic proficiency (PLIDA A2)
+
+:::
+
+```{r}
+print_section(position_data, 'teaching_positions')
+```
+
+<br>
+
+Selected Talks and Presentations {data-icon=group}
+-------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'talks')
+
+```
+
+Selected Publications {data-icon=book-open}
+--------------------------------------------------------------------------------
+
+```{r, message = FALSE, warning=FALSE}
+papers <- scholar::get_publications("2tgaiDIAAAAJ&") %>% 
+  distinct(title, .keep_all = TRUE) %>%
+  transmute(bibtype = "Article", author = as.character(author),
+            title = as.character(title),
+            journaltitle = as.character(journal), 
+            year = as.integer(year), 
+            number = as.character(number)) %>% 
+  arrange(desc(year)) %>% 
+  filter(!row_number() %in% c(3,4, 5,9,11 )) %>% 
+  mutate(id = row_number())
+
+papers %>% 
+     glue_data(
+       "**{id}**. ",
+      "{author}. ",
+      "**{title}**. ",
+      "_{journaltitle}_. ",
+      "{year}. ",
+      "{number}. ",
+      "\n\n\n",
+    )
+
+```
+
+Awards and scholarships
+-------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'awards')
+
+```
+
+Community projects {data-icon=group}
+-------------------------------------------------------------------------------
+
+::: aside
+
+Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
+
+Code available [here](https://github.com/palolili23/my_cv)
+
+Last updated on `r Sys.Date()`.
+
+:::
+
+```{r}
+print_section(position_data, 'community_projects')
+```
+
+
+
+```{r}
+if(PDF_EXPORT){
+  cat("
+  
+Links {data-icon=link}
+--------------------------------------------------------------------------------
+
+<br>
+
+
+")
+  
+  walk2(links, 1:length(links), function(link, index){
+    print(glue('{index}. {link}'))
+  })
+}
+```
+
+
