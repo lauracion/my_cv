@@ -50,10 +50,6 @@ if(PDF_EXPORT){
 Aside
 ================================================================================
 
-#<center>
-#![logo](photo.png){width=70%}
-#</center>
-
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
@@ -66,8 +62,8 @@ if(PDF_EXPORT){
 Contact {#contact}
 -------------------------------------------------------------------------------
 - <i class="fa fa-envelope"></i> lacion@gmail.com
-- <i class="fa fa-web"></i> [lacion.rbind.io](https://lacion.rbind.io)
-- <i class="fa fa-twitter"></i> [@_lacion_](https://twitter.com/_lacion_)
+- <i class="fa fa-home"></i> [lacion.rbind.io](https://lacion.rbind.io)
+- <i class="fa fa-twitter"></i> [\@_lacion_](https://twitter.com/_lacion_)
 - <i class="fa fa-github"></i> [github.com/lauracion](https://github.com/lauracion)
 
 
@@ -79,6 +75,14 @@ Skills {#skills}
 - R
 
 - SAS
+
+### Languages {#languages}
+
+- **Spanish:** Native language
+
+- **English:** Fully fluent (speaking, reading, and writing)
+
+- **French:** Fully fluent (DALF)
 
 
 
@@ -118,18 +122,6 @@ print_section(position_data, 'education')
 ```
 
 
-::: aside
-
-### Languages {#languages}
-
-- **Spanish:** Native language
-
-- **English:** Fully fluent (speaking, reading, and writing)
-
-- **French:** Fully fluent (DALF)
-
-:::
-
 ```{r}
 print_section(position_data, 'teaching_positions')
 ```
@@ -148,7 +140,7 @@ Selected Publications {data-icon=book-open}
 --------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'pubs')
+print_section(position_data, 'awards')
 
 ```
 
