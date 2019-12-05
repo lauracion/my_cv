@@ -1,6 +1,6 @@
 ---
-title: "L. Paloma Rojas-Saunero's CV"
-author: L. Paloma Rojas-Saunero
+title: "C. Laura Acion's Resume"
+author: Laura Acion
 date: "`r Sys.Date()`"
 output:
   pagedown::html_resume:
@@ -50,73 +50,52 @@ if(PDF_EXPORT){
 Aside
 ================================================================================
 
-<center>
-![logo](photo.png){width=70%}
-</center>
+#<center>
+#![logo](photo.png){width=70%}
+#</center>
 
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
-  cat("View this CV online with links here https://palolili23.github.io/my_cv/")
+  cat("View this CV online with links here https://lauracion.github.io/my_cv/")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/palolili23/my_cv/blob/master/index.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/lauracion/my_cv/blob/master/Acion_Resume.pdf)")
 }
 ```
 
 Contact {#contact}
 -------------------------------------------------------------------------------
-- <i class="fa fa-envelope"></i> l.rojassaunero@erasmusmc.nl
-- <i class="fa fa-twitter"></i> palolili23
-- <i class="fa fa-github"></i> github.com/palolili23
-- <i class="fa fa-phone"></i> (734) 0626359216
-- <i class="fa fa-linkedin"></i> [lprojass](https://www.linkedin.com/in/lprojass/) 
+- <i class="fa fa-envelope"></i> lacion@gmail.com
+- <i class="fa fa-web"></i> [lacion.rbind.io](https://lacion.rbind.io)
+- <i class="fa fa-twitter"></i> [@_lacion_](https://twitter.com/_lacion_)
+- <i class="fa fa-github"></i> [github.com/lauracion](https://github.com/lauracion)
 
 
 Skills {#skills}
 -------------------------------------------------------------------------------
-### Data management:
 
-- RedCap
-
-- R
-
-### Statistical Analysis:
+### Statistical Programming:
 
 - R
-
-- STATA
-
-- SPSS
 
 - SAS
 
-### Reproducibility tools:
-
-- Git and Github
-
-- RMarkdown
 
 
 Main
 ===============================================================================
-L. Paloma Rojas-Saunero {#title}
+C. Laura Acion {#title}
 -------------------------------------------------------------------------------
 
 
 ```{r}
-intro_text <- "I am a PhD student at the Epidemiology Department of Erasmus MC, and I am a part of the Causal Inference Group and the Neuro-Epidemiology Group. My research is focused on applying causal inference methods in cohort studies, specifically to emulate target trials for long-term exposures related to dementia and to understand the role of competing events in this setting. I am also an R enthusiast (R-Ladies organizer) and advocate of open science."
+intro_text <- "I am an Adjunct Research Scientist at the National Research Council in Argentina (CONICET). I work at the Instituto de Calculo, FCEN, UBA where I lead a data science research group focusing on the extraction of knowledge from electronic medical records. My goal in this part of my career is to switch from paid-walled science to open science. I am passionate about changing the way applied stats is taught and practiced. I am active in the academic publishing world, where I am the creator and Associate Editor of The American Journal of Drug and Alcohol Abuse’s Methods for Addiction Research Section. 
+
+The open source community helped me endlessly throughout my career. My way to give back to it is by helping the R community grow in Latin America. Among other roles in the R community, I am part of the R-Ladies Global Leaderhsip Team. I try to be involved and help as much as possible in any project that adds transparency and openness to research. I am passionate about ways to improve data analysis teaching, too. One of the roles I enjoy most is to help and mentor others. My passions are potentiated when they can flourish in Latin America."
 
 cat(sanitize_links(intro_text))
 ```
 
-
-
-Education {data-icon=graduation-cap data-concise=true}
--------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'education')
-```
 
 
 Research Experience {data-icon=laptop}
@@ -130,19 +109,24 @@ print_section(position_data, 'research_positions')
 Teaching Experience {data-icon=chalkboard-teacher}
 -------------------------------------------------------------------------------
 
+
+Education {data-icon=graduation-cap data-concise=true}
+-------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'education')
+```
+
+
 ::: aside
 
 ### Languages {#languages}
 
 - **Spanish:** Native language
 
-- **English:** Fully fluent (speaking, reading and writing)
+- **English:** Fully fluent (speaking, reading, and writing)
 
-- **French:** Strong proficiency (DELF B2)
-
-- **Portuguese:**  Intermediate proficiency. Brasilian-Bolivian Cultural Center.
-
-- **Italian:** Basic proficiency (PLIDA A2)
+- **French:** Fully fluent (DALF)
 
 :::
 
@@ -163,28 +147,8 @@ print_section(position_data, 'talks')
 Selected Publications {data-icon=book-open}
 --------------------------------------------------------------------------------
 
-```{r, message = FALSE, warning=FALSE}
-papers <- scholar::get_publications("2tgaiDIAAAAJ&") %>% 
-  distinct(title, .keep_all = TRUE) %>%
-  transmute(bibtype = "Article", author = as.character(author),
-            title = as.character(title),
-            journaltitle = as.character(journal), 
-            year = as.integer(year), 
-            number = as.character(number)) %>% 
-  arrange(desc(year)) %>% 
-  filter(!row_number() %in% c(3,4, 5,9,11 )) %>% 
-  mutate(id = row_number())
-
-papers %>% 
-     glue_data(
-       "**{id}**. ",
-      "{author}. ",
-      "**{title}**. ",
-      "_{journaltitle}_. ",
-      "{year}. ",
-      "{number}. ",
-      "\n\n\n",
-    )
+```{r}
+print_section(position_data, 'pubs')
 
 ```
 
@@ -203,7 +167,7 @@ Community projects {data-icon=group}
 
 Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
 
-Code available [here](https://github.com/palolili23/my_cv)
+Code available [here](https://github.com/lauracion/my_cv)
 
 Last updated on `r Sys.Date()`.
 
