@@ -1,5 +1,5 @@
 ---
-title: "C. Laura Acion's Resume"
+title: "C Laura Acion's Resume"
 author: Laura Acion
 date: "`r Sys.Date()`"
 output:
@@ -50,12 +50,13 @@ if(PDF_EXPORT){
 Aside
 ================================================================================
 
+
 ```{r}
 # When in export mode the little dots are unaligned, so fix that. 
 if(PDF_EXPORT){
   cat("View this CV online with links here https://lauracion.github.io/my_cv/")
 } else {
-  cat("[<i class='fas fa-download'></i> Download a PDF of this CV](https://github.com/lauracion/my_cv/blob/master/Acion_Resume.pdf)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this Resume](https://github.com/lauracion/my_cv/blob/master/Acion_Resume.pdf)")
 }
 ```
 
@@ -70,17 +71,28 @@ Contact {#contact}
 Skills {#skills}
 -------------------------------------------------------------------------------
 
+
 ### Statistical Programming:
 
 - R
 
 - SAS
 
+- SPSS
+
+### Other Tools:
+
+- Shell scripting
+
+- Git, Github
+
+- Visual Basic
+
 ### Languages {#languages}
 
 - **Spanish:** Native language
 
-- **English:** Fully fluent (speaking, reading, and writing)
+- **English:** Fully fluent (TOEFL)
 
 - **French:** Fully fluent (DALF)
 
@@ -88,21 +100,21 @@ Skills {#skills}
 
 Main
 ===============================================================================
-C. Laura Acion {#title}
+C Laura Acion Resume {#title}
 -------------------------------------------------------------------------------
 
 
 ```{r}
-intro_text <- "I am an Adjunct Research Scientist at the National Research Council in Argentina (CONICET). I work at the Instituto de Calculo, FCEN, UBA where I lead a data science research group focusing on the extraction of knowledge from electronic medical records. My goal in this part of my career is to switch from paid-walled science to open science. I am passionate about changing the way applied stats is taught and practiced. I am active in the academic publishing world, where I am the creator and Associate Editor of The American Journal of Drug and Alcohol Abuse’s Methods for Addiction Research Section. 
+intro_text <- "I am a tenured Associate Researcher at the National Research Council (Argentina) working at the Calculus Institute, University of Buenos Aires. I lead a health data science research group in formation. One of the main goals of the group is to switch from paid-walled science to open science. 
 
-The open source community helped me endlessly throughout my career. My way to give back to it is by helping the R community grow in Latin America. Among other roles in the R community, I am part of the R-Ladies Global Leaderhsip Team. I try to be involved and help as much as possible in any project that adds transparency and openness to research. I am passionate about ways to improve data analysis teaching, too. One of the roles I enjoy most is to help and mentor others. My passions are potentiated when they can flourish in Latin America."
+Another of my main career goals it to improve data analysis teaching and practice. One of the roles I enjoy most is mentoring others. I am active in international collaborative teaching and programming communities with high diversity standards. These communities help me achieve my goals while giving back to the open source community, with a focus in Latin America."
 
 cat(sanitize_links(intro_text))
 ```
 
 
 
-Research Experience {data-icon=laptop}
+Selected Research Experience {data-icon=laptop}
 -------------------------------------------------------------------------------
 
 ```{r}
@@ -110,20 +122,19 @@ print_section(position_data, 'research_positions')
 ```
 
 
-Teaching Experience {data-icon=chalkboard-teacher}
+Selected Teaching Experience {data-icon=chalkboard-teacher}
 -------------------------------------------------------------------------------
 
+```{r}
+print_section(position_data, 'teaching_positions')
+```
 
-Education {data-icon=graduation-cap data-concise=true}
+
+Selected Education {data-icon=graduation-cap data-concise=true}
 -------------------------------------------------------------------------------
 
 ```{r}
 print_section(position_data, 'education')
-```
-
-
-```{r}
-print_section(position_data, 'teaching_positions')
 ```
 
 <br>
@@ -136,7 +147,7 @@ print_section(position_data, 'talks')
 
 ```
 
-Selected Publications {data-icon=book-open}
+Selected (from a total of 39) Peer-Reviewed Publications {data-icon=book-open}
 --------------------------------------------------------------------------------
 
 ```{r}
@@ -144,7 +155,7 @@ print_section(position_data, 'awards')
 
 ```
 
-Awards and scholarships
+Selected Awards and Scholarships
 -------------------------------------------------------------------------------
 
 ```{r}
@@ -152,7 +163,15 @@ print_section(position_data, 'awards')
 
 ```
 
-Community projects {data-icon=group}
+Selected Editorial Experience {data-icon=book-open}
+-------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'pubs')
+
+```
+
+Selected Community Projects {data-icon=group}
 -------------------------------------------------------------------------------
 
 ::: aside
