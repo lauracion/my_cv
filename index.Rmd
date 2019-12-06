@@ -1,5 +1,5 @@
 ---
-title: "C Laura Acion's Resume"
+title: "Laura Acion's Resume"
 author: Laura Acion
 date: "`r Sys.Date()`"
 output:
@@ -64,7 +64,7 @@ Contact {#contact}
 -------------------------------------------------------------------------------
 - <i class="fa fa-envelope"></i> lacion@gmail.com
 - <i class="fa fa-home"></i> [lacion.rbind.io](https://lacion.rbind.io)
-- <i class="fa fa-twitter"></i> [\@_lacion_](https://twitter.com/_lacion_)
+- <i class="fa fa-twitter"></i> [\@\_lacion\_](https://twitter.com/_lacion_)
 - <i class="fa fa-github"></i> [github.com/lauracion](https://github.com/lauracion)
 
 
@@ -100,18 +100,25 @@ Skills {#skills}
 
 Main
 ===============================================================================
-C Laura Acion Resume {#title}
+Laura Acion Resume {#title}
 -------------------------------------------------------------------------------
 
 
 ```{r}
-intro_text <- "I am a tenured Associate Researcher at the National Research Council (Argentina) working at the Calculus Institute, University of Buenos Aires. I lead a health data science research group in formation. One of the main goals of the group is to switch from paid-walled science to open science. 
+intro_text <- "I am a tenured Associate Researcher at the Argentinean National Research Council (CONICET) working at the Calculus Institute, University of Buenos Aires (UBA). I lead a health data science research group in formation. One of the main goals of the group is to transition from paid-wall to open science. 
 
-Another of my main career goals it to improve data analysis teaching and practice. One of the roles I enjoy most is mentoring others. I am active in international collaborative teaching and programming communities with high diversity standards. These communities help me achieve my goals while giving back to the open source community, with a focus in Latin America."
+Another of my main career goals it to improve data analysis teaching and practice. One of the roles I enjoy most is mentoring others. I am active in international collaborative teaching and programming communities with high diversity standards. These communities help me achieve my goals, particularly in Latin America, while giving back to open source."
 
 cat(sanitize_links(intro_text))
 ```
 
+
+Selected Education {data-icon=graduation-cap data-concise=true}
+-------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'education')
+```
 
 
 Selected Research Experience {data-icon=laptop}
@@ -130,14 +137,29 @@ print_section(position_data, 'teaching_positions')
 ```
 
 
-Selected Education {data-icon=graduation-cap data-concise=true}
+Selected Proffesional Activities {data-icon=briefcase}
 -------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'education')
+print_section(position_data, 'prof_activities')
+
 ```
 
-<br>
+Selected Editorial Experience {data-icon=book-open}
+-------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'ed_exp')
+
+```
+
+
+Selected Community Developments {data-icon=group}
+-------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'community_projects')
+```
 
 Selected Talks and Presentations {data-icon=group}
 -------------------------------------------------------------------------------
@@ -147,13 +169,14 @@ print_section(position_data, 'talks')
 
 ```
 
-Selected (from a total of 39) Peer-Reviewed Publications {data-icon=book-open}
+Peer-Reviewed Publications {data-icon=book-open}
 --------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'awards')
+print_section(position_data, 'pubs')
 
 ```
+
 
 Selected Awards and Scholarships
 -------------------------------------------------------------------------------
@@ -163,31 +186,20 @@ print_section(position_data, 'awards')
 
 ```
 
-Selected Editorial Experience {data-icon=book-open}
--------------------------------------------------------------------------------
-
-```{r}
-print_section(position_data, 'pubs')
-
-```
-
-Selected Community Projects {data-icon=group}
--------------------------------------------------------------------------------
-
 ::: aside
 
-Made with the R package [**pagedown**](https://github.com/rstudio/pagedown). 
+Find my full CV [**here**](http://tiny.cc/Acion_CV)
 
-Code available [here](https://github.com/lauracion/my_cv)
 
-Last updated on `r Sys.Date()`.
+
+-------------------------------------------------------------------------------
+Made with the R package [**pagedown**](https://github.com/rstudio/pagedown) 
+
+Code available [**here**](https://github.com/lauracion/my_cv)
+
+Last updated on `r Sys.Date()`
 
 :::
-
-```{r}
-print_section(position_data, 'community_projects')
-```
-
 
 
 ```{r}
