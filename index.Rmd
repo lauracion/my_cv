@@ -105,7 +105,7 @@ Laura Acion Resume {#title}
 
 
 ```{r}
-intro_text <- "I am a tenured Associate Researcher at the Argentinean National Research Council (CONICET) working at the Calculus Institute, University of Buenos Aires (UBA). I lead a health data science research group in formation. One of the main goals of the group is to transition from paid-wall to open science. 
+intro_text <- "I am a tenured Associate Researcher at Argentina's National Research Council (CONICET) working at the Calculus Institute, University of Buenos Aires (UBA). I lead a health data science research group in formation. One of the main goals of the group is to transition from paid-wall to open science. 
 
 Another of my main career goals it to improve data analysis teaching and practice. One of the roles I enjoy most is mentoring others. I am active in international collaborative teaching and programming communities with high diversity standards. These communities help me achieve my goals, particularly in Latin America, while giving back to open source."
 
