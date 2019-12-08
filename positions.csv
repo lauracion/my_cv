@@ -1,7 +1,7 @@
 section,in_resume,title,loc,institution,start,end,description_1,description_2,description_3
-education,TRUE,PhD Biostatistics,University of Iowa,"Iowa, USA",2002,2011,Model selection criteria for longitudinal data,NA,NA
+education,TRUE,PhD Biostatistics,University of Iowa,"Iowa, USA",2002,2011,NA,NA,NA
 education,TRUE,Licentiate Molecular Biology,UBA,"Buenos Aires, Argentina",1995,2002,NA,NA,NA
-research_positions,TRUE,Tenured Associate Researcher,"Calculus Institute, UBA-CONICET","Buenos Aires, Argentina","Nov, 2018",Currently,Forming and leading a health data science group,NA,NA
+research_positions,TRUE,Tenured Associate Researcher,"Calculus Institute, UBA-CONICET","Buenos Aires, Argentina","Nov, 2018",Currently,NA,NA,NA
 research_positions,TRUE,Associate Research Scientist,University of Iowa,"Iowa, USA",2011,Currently,Biostatistical consultant for various research groups working in psychiatry research. Remote work,NA,NA
 teaching_positions,TRUE,Instructor and Trainer,Data Carpentry & The Carpentries,Around the world,2018,Currently,NA,NA,NA
 teaching_positions,TRUE,Instructor for DataCamp,www.datacamp.com,Online,2018,2018,"Left the course ""Longitudinal Analysis in R"" halfway into its development due to concerns about the company's ethics",NA,NA
@@ -9,16 +9,18 @@ teaching_positions,TRUE,Various instructor positions,"UBA, Italian Hospital Univ
 talks,TRUE,Using open science to advance addiction research,Research Society on Alcoholism,"New Orleans, USA",,2020,"Symposium chair and organizer. Authors: A Heath, J Salvatore, G Chan, S Kuo, D Falk, K Witkiewitz, L Acion",,
 talks,TRUE,Analytical alphabetization for research in times of big data,Hospital Italiano de Buenos Aires,"Buenos Aires, Argentina",,2019,,,
 talks,TRUE,Insights from the recent R community development and growth in Latin America,useR 2019,"Toulouse, France",,2019,,,
-talks,TRUE,Healthy communities of practice for an inclusive AI in LatAm,Roya Holloway,"London, United Kingdom",,2019,,,
-awards,TRUE,Diversity scholarship,useR 2019,"Toulouse, France",,2019,NA,,
-awards,TRUE,Travel award,rOpenSci unconf,"Seattle, USA",,2018,NA,,
+talks,TRUE,Healthy communities of practice for an inclusive AI in LatAm,Royal Holloway,"London, United Kingdom",,2019,,,
+awards,TRUE,useR 2019 Diversity Scholarship,,"Toulouse, France",,2019,NA,,
+awards,TRUE,rOpenSci Unconf Travel Award,,"Seattle, USA",,2018,NA,,
 community_projects,TRUE,"Founder and organizer of R-Ladies Buenos Aires and R en Buenos Aires, the two R user groups in Buenos Aires",,"Buenos Aires, Argentina",2017,Currently,"Event organization, funding administration, community development, content development, Slack management",,
 community_projects,TRUE,R-Ladies Leadership Team,,Online,2019,Currently,"Onboarding of new chapters, non-profit administration, liaison to external events featuring R-Ladies activities",,
-community_projects,TRUE,Individual and community translations of R-related materials to Spanish,,Online,2018,Currently,"Translation of the R Consortium and Rstudio surveys for the use of R, community translations of the book R four Data Science and of The Carpentries lessons",,
+community_projects,TRUE,Translations of R-related materials to Spanish,,Online,2018,Currently,"Translation of the R Consortium and Rstudio surveys for the use of R, community translations of the book R for Data Science and of The Carpentries lessons",,
 pubs,TRUE,All peer-reviewed publications can be found clicking in: [**my ORCID profile**](https://orcid.org/0000-0001-5213-6012),,,2000,2019,,,
-prof_activities,TRUE,Organization committee member and R-Ladies Global Liaison,useR 2020,"St Louis, USA",2020,,,,
-prof_activities,TRUE,Founding Chair,LatinR <- Latin American Conference abou the Use of R for Research + Development,Rotating Latin American Cities,2017,2019,,,
+prof_activities,TRUE,useR 2020 organization committee member,,"St Louis, USA",2019,2019,,,
+prof_activities,TRUE,Founding Chair,LatinR <- Latin American Conference about the Use of R for Research + Development,Rotating Latin American Cities,2017,2019,,,
 prof_activities,TRUE,Project evaluator,"US Dept of Veteran Affairs, National Institutes of Mental Health","Washington DC, USA",2017,Currently,Grant proposal evaluation (VA),Member of Data Safety Monitoring Board (NIMH),
 ed_exp,TRUE,Founding Associate Editor,"Methods in Addiction Research Section, The American Journal of Drug and Alcohol Abuse",,2017,Currently,Development of a brand new section for a well-established journal. Rapidly went from one paper per issue to two papers per issue,,
 ed_exp,TRUE,Editorial Board Member,Revista Liberabit,,2017,Currently,,,
-ed_exp,TRUE,Reviewer for several academic journals. Verified records can be found clicking in: [**my Publons profile**](https://publons.com/researcher/1171555/laura-acion/),,,2004,Currently,,,
+ed_exp,TRUE,Reviewer for several academic journals, Verified records can be found clicking in: [**my Publons profile**](https://publons.com/researcher/1171555/laura-acion/),,2004,Currently,,,
+vol,TRUE,Red Solidaria help line operator,,"Buenos Aires, Argentina",2010,2012,Helped connecting people in need with people and institutions who could help them,Mantained the knowledge data base,
+vol,TRUE,Fundacion Si community manager,,"Buenos Aires, Argentina",2012,2015,Facebook and Twitter content publication and customer interaction,Google Ads and Google Charities setup and administration,

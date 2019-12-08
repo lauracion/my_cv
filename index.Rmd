@@ -107,7 +107,7 @@ Laura Acion Resume {#title}
 ```{r}
 intro_text <- "I am a tenured Associate Researcher at Argentina's National Research Council (CONICET) working at the Calculus Institute, University of Buenos Aires (UBA). I lead a health data science research group in formation. One of the main goals of the group is to transition from paid-wall to open science. 
 
-Another of my main career goals it to improve data analysis teaching and practice. One of the roles I enjoy most is mentoring others. I am active in international collaborative teaching and programming communities with high diversity standards. These communities help me achieve my goals, particularly in Latin America, while giving back to open source."
+Another of my main career goals is to improve data analysis teaching and practice. One of the roles I enjoy most is mentoring others. I am active in international collaborative teaching and programming communities with high diversity standards. These communities help me give back to open source, particularly in Latin America."
 
 cat(sanitize_links(intro_text))
 ```
@@ -136,13 +136,13 @@ Selected Teaching Experience {data-icon=chalkboard-teacher}
 print_section(position_data, 'teaching_positions')
 ```
 
+<br>
 
-Selected Proffesional Activities {data-icon=briefcase}
+Selected Community Developments {data-icon=group}
 -------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'prof_activities')
-
+print_section(position_data, 'community_projects')
 ```
 
 Selected Editorial Experience {data-icon=book-open}
@@ -153,12 +153,12 @@ print_section(position_data, 'ed_exp')
 
 ```
 
-
-Selected Community Developments {data-icon=group}
+Selected Professional Activities {data-icon=briefcase}
 -------------------------------------------------------------------------------
 
 ```{r}
-print_section(position_data, 'community_projects')
+print_section(position_data, 'prof_activities')
+
 ```
 
 Selected Talks and Presentations {data-icon=group}
@@ -183,6 +183,14 @@ Selected Awards and Scholarships
 
 ```{r}
 print_section(position_data, 'awards')
+
+```
+
+Other Volunteer Activities
+-------------------------------------------------------------------------------
+
+```{r}
+print_section(position_data, 'vol')
 
 ```
 
