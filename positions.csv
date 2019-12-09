@@ -1,12 +1,12 @@
 section,in_resume,title,loc,institution,start,end,description_1,description_2,description_3
 education,TRUE,PhD Biostatistics,University of Iowa,"Iowa, USA",2002,2011,NA,NA,NA
-education,TRUE,Licentiate Molecular Biology,UBA,"Buenos Aires, Argentina",1995,2002,NA,NA,NA
+education,TRUE,Licentiate Molecular Biology,University of Buenos Aires (UBA),"Buenos Aires, Argentina",1995,2002,NA,NA,NA
 research_positions,TRUE,Tenured Associate Researcher,"Calculus Institute, UBA-CONICET","Buenos Aires, Argentina","Nov, 2018",Currently,NA,NA,NA
 research_positions,TRUE,Associate Research Scientist,University of Iowa,"Iowa, USA",2011,Currently,Biostatistical consultant for various research groups working in psychiatry research. Remote work,NA,NA
 teaching_positions,TRUE,Instructor and Trainer,Data Carpentry & The Carpentries,Around the world,2018,Currently,NA,NA,NA
 teaching_positions,TRUE,Instructor for DataCamp,www.datacamp.com,Online,2018,2018,"Left the course ""Longitudinal Analysis in R"" halfway into its development due to concerns about the company's ethics",NA,NA
 teaching_positions,TRUE,Various instructor positions,"UBA, Italian Hospital Universitary Institute","Buenos Aires, Argentina",2016,2018,Lead instructor of introductory data analysis courses for undergraduate and graduate health and biological sciences students,NA,NA
-talks,TRUE,Using open science to advance addiction research,Research Society on Alcoholism,"New Orleans, USA",,2020,"Symposium chair and organizer. Authors: A Heath, J Salvatore, G Chan, S Kuo, D Falk, K Witkiewitz, L Acion",,
+talks,TRUE,Using open science to advance addiction research,Research Society on Alcoholism (submitted),"New Orleans, USA",,2020,"Symposium chair and organizer. Authors: A Heath, J Salvatore, G Chan, S Kuo, D Falk, K Witkiewitz, L Acion",,
 talks,TRUE,Analytical alphabetization for research in times of big data,Hospital Italiano de Buenos Aires,"Buenos Aires, Argentina",,2019,,,
 talks,TRUE,Insights from the recent R community development and growth in Latin America,useR 2019,"Toulouse, France",,2019,,,
 talks,TRUE,Healthy communities of practice for an inclusive AI in LatAm,Royal Holloway,"London, United Kingdom",,2019,,,
