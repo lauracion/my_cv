@@ -56,8 +56,7 @@ Aside
 if(PDF_EXPORT){
   cat("View this CV online [**here**](https://lauracion.github.io/my_cv/)")
 } else {
-  #cat("[<i class='fas fa-download'></i> Download a PDF of this doc](https://github.com/lauracion/my_cv/blob/master/Acion_Resume.pdf)")
-  cat("View this CV online [**here**](https://lauracion.github.io/my_cv/)")
+  cat("[<i class='fas fa-download'></i> Download a PDF of this doc](https://github.com/lauracion/my_cv/blob/master/Acion_Resume.pdf)")
 }
 ```
 
