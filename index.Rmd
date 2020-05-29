@@ -73,7 +73,7 @@ Skills {#skills}
 -------------------------------------------------------------------------------
 
 
-### Statistical Programming:
+### Statistical Programming :
 
 - R
 
