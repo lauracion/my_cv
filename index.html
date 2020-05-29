@@ -7,16 +7,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <meta name="author" content="Laura Acion" />
-    <meta name="date" content="2019-12-09" />
+    <meta name="date" content="2020-05-29" />
     <title>Laura Acion’s Resume</title>
 
     
         <link href="index_files/font-awesome-5.1.0/css/all.css" rel="stylesheet" />
     <link href="index_files/font-awesome-5.1.0/css/v4-shims.css" rel="stylesheet" />
-    <link href="index_files/paged-0.6/css/resume.css" rel="stylesheet" />
-    <script src="index_files/paged-0.6/js/config.js"></script>
-    <script src="index_files/paged-0.6/js/paged.js"></script>
-    <script src="index_files/paged-0.6/js/hooks.js"></script>
+    <link href="index_files/paged-0.10/css/resume.css" rel="stylesheet" />
+    <script src="index_files/paged-0.10/js/config.js"></script>
+    <script src="index_files/paged-0.10/js/paged.js"></script>
+    <script src="index_files/paged-0.10/js/hooks.js"></script>
     
         <link rel="stylesheet" href="css\styles.css" type="text/css" />
     
@@ -133,15 +133,6 @@
 </div>
 <div id="selected-community-developments" class="section level2" data-icon="group">
 <h2>Selected Community Developments</h2>
-<div id="founder-and-organizer-of-r-ladies-buenos-aires-and-r-en-buenos-aires-the-two-r-user-groups-in-buenos-aires" class="section level3">
-<h3>Founder and organizer of R-Ladies Buenos Aires and R en Buenos Aires, the two R user groups in Buenos Aires</h3>
-<p>N/A</p>
-<p>Buenos Aires, Argentina</p>
-<p>Currently - 2017</p>
-<ul>
-<li>Event organization, funding administration, community development, content development, Slack management</li>
-</ul>
-</div>
 <div id="r-ladies-leadership-team" class="section level3">
 <h3>R-Ladies Leadership Team</h3>
 <p>N/A</p>
@@ -157,7 +148,16 @@
 <p>Online</p>
 <p>Currently - 2018</p>
 <ul>
-<li>Translation of the R Consortium and Rstudio surveys for the use of R, community translations of the book R for Data Science and of The Carpentries lessons</li>
+<li>Translation of the R Consortium and Rstudio surveys for the use of R, community translations of the book R for Data Science and Teaching Tech Together, and of The Carpentries lessons</li>
+</ul>
+</div>
+<div id="founder-and-organizer-of-r-ladies-buenos-aires-and-r-en-buenos-aires-the-two-r-user-groups-in-buenos-aires" class="section level3">
+<h3>Founder and organizer of R-Ladies Buenos Aires and R en Buenos Aires, the two R user groups in Buenos Aires</h3>
+<p>N/A</p>
+<p>Buenos Aires, Argentina</p>
+<p>2019 - 2017</p>
+<ul>
+<li>Event organization, funding administration, community development, content development, Slack management</li>
 </ul>
 </div>
 </div>
@@ -200,8 +200,8 @@
 <div id="user-2020-organization-committee-member" class="section level3">
 <h3>useR 2020 organization committee member</h3>
 <p>N/A</p>
-<p>St Louis, USA</p>
-<p>2019</p>
+<p>online</p>
+<p>currently - 2019</p>
 </div>
 <div id="founding-chair" class="section level3">
 <h3>Founding Chair</h3>
@@ -214,7 +214,7 @@
 <h2>Selected Talks and Presentations</h2>
 <div id="using-open-science-to-advance-addiction-research" class="section level3">
 <h3>Using open science to advance addiction research</h3>
-<p>Research Society on Alcoholism (submitted)</p>
+<p>Research Society on Alcoholism (accepted)</p>
 <p>New Orleans, USA</p>
 <p>2020</p>
 <ul>
@@ -246,11 +246,17 @@
 <h3>All peer-reviewed publications can be found clicking in: <a href="https://orcid.org/0000-0001-5213-6012"><strong>my ORCID profile</strong></a></h3>
 <p>N/A</p>
 <p>N/A</p>
-<p>2019 - 2000</p>
+<p>2020 - 2000</p>
 </div>
 </div>
 <div id="selected-awards-and-scholarships" class="section level2">
 <h2>Selected Awards and Scholarships</h2>
+<div id="open-bioinformatics-foundation-fellowship" class="section level3">
+<h3>Open Bioinformatics Foundation Fellowship</h3>
+<p>N/A</p>
+<p>N/A</p>
+<p>2020</p>
+</div>
 <div id="user-2019-diversity-scholarship" class="section level3">
 <h3>useR 2019 Diversity Scholarship</h3>
 <p>N/A</p>
@@ -275,22 +281,12 @@
 <li>Facebook and Twitter content publication and customer interaction</li>
 <li>Google Ads and Google Charities setup and administration</li>
 </ul>
-</div>
-<div id="red-solidaria-help-line-operator" class="section level3">
-<h3>Red Solidaria help line operator</h3>
-<p>N/A</p>
-<p>Buenos Aires, Argentina</p>
-<p>2012 - 2010</p>
-<ul>
-<li>Helped connecting people in need with people and institutions who could help them</li>
-<li>Mantained the knowledge data base</li>
-</ul>
 <div class="aside">
 <p>Find my full CV <a href="http://tiny.cc/Acion_CV"><strong>here</strong></a></p>
 <hr />
 <p>Made with the R package <a href="https://github.com/rstudio/pagedown"><strong>pagedown</strong></a></p>
 <p>Code available <a href="https://github.com/lauracion/my_cv"><strong>here</strong></a></p>
-<p>Last updated on 2019-12-09</p>
+<p>Last updated on 2020-05-29</p>
 </div>
 </div>
 </div>
@@ -323,8 +319,11 @@
     if (i === 0 && el.id === 'title') continue;
     el.className += ' main-block';
     if (el.dataset['concise']) el.className += ' concise';
-    s = el.dataset['icon'] || 'bookmark';
-    el.firstElementChild.insertBefore(create_el('i', 'fa fa-' + s), el.firstElementChild.firstChild);
+    // if there is no icon, add an icon:
+    if (el.firstElementChild.firstChild && el.firstElementChild.firstChild.nodeName !== 'I') {
+      s = el.dataset['icon'] || 'bookmark';
+      el.firstElementChild.insertBefore(create_el('i', 'fa fa-' + s), el.firstElementChild.firstChild);
+    }
   }
 
   // tweak class names of blocks in sections
